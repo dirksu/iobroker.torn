@@ -70,4 +70,4 @@ Feel free to reach out for suggestions, contributions or collaboration.
 
 ## 📜 License
 
-MIT License — free to use, share, and extend.
+GNU General Public License v3.0 — see [LICENSE](LICENSE) for details.
