@@ -1,0 +1,39 @@
+{
+  "common": {
+    "name": "torn",
+    "version": "0.0.1",
+    "title": "Torn API Adapter",
+    "titleLang": {
+      "en": "Torn API Adapter",
+      "de": "Torn API Adapter"
+    },
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "torn.png",
+    "enabled": true,
+    "extIcon": "https://www.torn.com/favicon.ico",
+    "readme": "https://github.com/dirksu/iobroker.torn/blob/main/README.md",
+    "keywords": ["torn", "game", "api", "status", "attack"],
+    "authors": [
+      {
+        "name": "Rumblestilzchen",
+        "email": "",
+        "role": "developer"
+      }
+    ],
+    "material": true
+  },
+  "native": {
+    "apiKey": ""
+  },
+  "instanceObjects": [],
+  "adminUI": {
+    "config": "json"
+  },
+  "admin": {
+    "legacy": false,
+    "tab": false
+  },
+  "objects": []
+}
