@@ -102,7 +102,8 @@
         },
         "native": {
                 "option1": true,
-                "option2": "42"
+                "option2": "42",
+                "apiKey": "test"
         },
         "objects": [],
         "instanceObjects": [
