@@ -22,12 +22,18 @@
         "role": "developer"
       }
     ],
-    "material": true
+    "material": true,
+    "native": {
+      "apiKey": {
+        "type": "text",
+        "label": "API Key",
+        "default": ""
+      }
+    }
   },
   "native": {
     "apiKey": ""
   },
-  "instanceObjects": [],
   "adminUI": {
     "config": "json"
   },
@@ -35,5 +41,6 @@
     "legacy": false,
     "tab": false
   },
+  "instanceObjects": [],
   "objects": []
 }

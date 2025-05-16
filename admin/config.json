@@ -1,0 +1,19 @@
+{
+  "type": "panel",
+  "items": [
+    {
+      "type": "group",
+      "label": "Torn API Settings",
+      "items": [
+        {
+          "type": "text",
+          "name": "apiKey",
+          "label": "Torn API Key",
+          "tooltip": "Enter your personal API key from torn.com",
+          "placeholder": "e.g. abc123...xyz",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}
