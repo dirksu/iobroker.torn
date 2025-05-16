@@ -1,46 +1,131 @@
+
 {
-  "common": {
-    "name": "torn",
-    "version": "0.0.1",
-    "title": "Torn API Adapter",
-    "titleLang": {
-      "en": "Torn API Adapter",
-      "de": "Torn API Adapter"
-    },
-    "license": "MIT",
-    "platform": "Javascript/Node.js",
-    "main": "main.js",
-    "icon": "torn.png",
-    "enabled": true,
-    "extIcon": "https://www.torn.com/favicon.ico",
-    "readme": "https://github.com/dirksu/iobroker.torn/blob/main/README.md",
-    "keywords": ["torn", "game", "api", "status", "attack"],
-    "authors": [
-      {
-        "name": "Rumblestilzchen",
-        "email": "",
-        "role": "developer"
-      }
-    ],
-    "material": true,
-    "native": {
-      "apiKey": {
-        "type": "text",
-        "label": "API Key",
-        "default": ""
-      }
-    }
-  },
-  "native": {
-    "apiKey": ""
-  },
-  "adminUI": {
-    "config": "json"
-  },
-  "admin": {
-    "legacy": false,
-    "tab": false
-  },
-  "instanceObjects": [],
-  "objects": []
+        "common": {
+                "name": "torn",
+                "version": "0.0.1",
+                "news": {
+                        "0.0.1": {
+                                "en": "initial release",
+                                "de": "Erstveröffentlichung",
+                                "ru": "Начальная версия",
+                                "pt": "lançamento inicial",
+                                "nl": "Eerste uitgave",
+                                "fr": "Première version",
+                                "it": "Versione iniziale",
+                                "es": "Versión inicial",
+                                "pl": "Pierwsze wydanie",
+                                "uk": "Початкова версія",
+                                "zh-cn": "首次出版"
+                        }
+                },
+                "titleLang": {
+                        "en": "Torn",
+                        "de": "Zerrissen",
+                        "ru": "Разорванный",
+                        "pt": "Rasgado",
+                        "nl": "Stuk",
+                        "fr": "Déchiré",
+                        "it": "Strappato",
+                        "es": "Rasgado",
+                        "pl": "Rozdarty",
+                        "uk": "Розірваний",
+                        "zh-cn": "撕裂"
+                },
+                "desc": {
+                        "en": "Adapter für Torn City",
+                        "de": "Adapter für zerrissene Stadt",
+                        "ru": "Адаптер разорванный город",
+                        "pt": "Adaptador Für Torn City",
+                        "nl": "Adapter Für gescheurde stad",
+                        "fr": "Adaptateur für ville déchirée",
+                        "it": "Adattatore für lacerato",
+                        "es": "Adaptador für ciudad desgarrada",
+                        "pl": "Adapter Für Torn City",
+                        "uk": "Адаптер Für Torn City",
+                        "zh-cn": "适配器für撕裂城市"
+                },
+                "authors": [
+                        "Rumblestilzchen <di.sudowe@gmail.com>"
+                ],
+                "keywords": [
+                        "game"
+                ],
+                "licenseInformation": {
+                        "type": "free",
+                        "license": "GPL-3.0"
+                },
+                "platform": "Javascript/Node.js",
+                "icon": "torn.png",
+                "enabled": true,
+                "extIcon": "https://raw.githubusercontent.com/dirksu/ioBroker.torn/main/admin/torn.png",
+                "readme": "https://github.com/dirksu/ioBroker.torn/blob/main/README.md",
+                "loglevel": "info",
+                "tier": 3,
+                                "mode": "daemon",
+                "type": "general",
+                "compact": true,
+                "connectionType": "cloud",
+                "dataSource": "poll",
+                "adminUI": {
+                        "config": "json",
+                        "tab": "materialize"
+                },
+                "adminTab": {
+                        "singleton": true,
+                        "name": {
+                                "en": "Torn",
+                                "de": "Zerrissen",
+                                "ru": "Разорванный",
+                                "pt": "Rasgado",
+                                "nl": "Stuk",
+                                "fr": "Déchiré",
+                                "it": "Strappato",
+                                "es": "Rasgado",
+                                "pl": "Rozdarty",
+                                "uk": "Розірваний",
+                                "zh-cn": "撕裂"
+                        },
+                        "link": "",
+                        "fa-icon": "info"
+                },
+                "supportCustoms": true,
+                "dependencies": [
+                        {
+                                "js-controller": ">=6.0.11"
+                        }
+                ],
+                "globalDependencies": [
+                        {
+                                "admin": ">=7.0.23"
+                        }
+                ]
+        },
+        "native": {
+                "option1": true,
+                "option2": "42"
+        },
+        "objects": [],
+        "instanceObjects": [
+                {
+                        "_id": "info",
+                        "type": "channel",
+                        "common": {
+                                "name": "Information"
+                        },
+                        "native": {}
+                },
+                {
+                        "_id": "info.connection",
+                        "type": "state",
+                        "common": {
+                                 "role": "indicator.connected",
+                                "name": "Device or service connected",
+                                "type": "boolean",
+                                "read": true,
+                                "write": false,
+                                "def": false
+                        },
+                        "native": {}
+                }
+        ]
 }
